@@ -11,7 +11,7 @@ export class FakeUserCreator {
     return {
       id: this.userId,
       login: userName,
-      avata_url: this.makeAvatarUrl(this.userId++),
+      avatar_url: this.makeAvatarUrl(this.userId++),
       html_url: `https://github.com/${userName.replace(' ', '')}`,
     };
   }
