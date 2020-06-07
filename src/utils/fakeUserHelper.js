@@ -24,6 +24,7 @@ export function makeFakeUsers(howMany = 1) {
       .fill(null)
       .map((_) =>
         chance.name({
+          nationality: 'en',
           gender: Math.random() > 0.5 ? 'male' : 'female',
         }),
       ),
